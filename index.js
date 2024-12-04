@@ -95,6 +95,6 @@ const server = http.createServer((req, res) => {
         res.end('<h1>Page not found!</h1>');
     }
 });
-server.listen(PORT, '127.0.0.1', () => {
+server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server started on port ${PORT}`);
 });
